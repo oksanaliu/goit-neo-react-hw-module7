@@ -1,0 +1,28 @@
+.searchBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    max-width: 330px;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 5px;
+}
+
+.inputSerch {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.2s ease-in-out;
+}
+
+.inputSerch:focus {
+    border-color: #007bff;
+    outline: none;
+}

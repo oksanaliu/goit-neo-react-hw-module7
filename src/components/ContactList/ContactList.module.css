@@ -1,0 +1,38 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-start;
+    list-style: none;
+
+}
+
+
+.listItem {
+    flex: 1 1 calc((100vw - 40px) / 4);
+    min-width: 200px;
+    max-width: 334px;
+    box-sizing: border-box;
+
+}
+
+
+.listItem:nth-child(4n) {
+    margin-right: 0;
+}
+
+@media (max-width: 1024px) {
+    .listItem {
+        flex: 1 1 calc((100vw - 40px) / 2);
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .listItem {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
